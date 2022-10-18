@@ -1,0 +1,90 @@
+
+
+$red:#ed2d34;
+$black:#444;
+$white:#fff;
+$light-color:#666;
+$border:.2rem solid $black;
+
+@mixin flex($align) {
+  display: flex;
+  align-items: $align;
+  flex-wrap: wrap;
+  gap:3rem;
+}
+
+
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  color: var(--foreground) !important;
+  text-transform: capitalize;
+}
+@mixin graphText($graphSize) {
+   font-size: $graphSize;
+   color: var(--foreground) !important;
+   line-height: 2;
+   padding:1rem 0;
+}
+
+.hero{
+  background-color: var(--background);
+  padding-top: 12rem;
+}
+
+.btn-p {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.banner{
+  @include flex(center);
+  flex-wrap: wrap-reverse;
+  width: 90%;
+  margin: 0 auto;
+  .content{
+     flex:1 1 31rem;
+
+     span{
+        font-size: 2.5rem;
+        color:$red;
+     }
+
+     h3{
+        @include titleText(4rem);
+        padding-top: 1rem;
+     }
+
+     p{
+        padding:1rem 0;
+        @include graphText(1.7rem);
+     }
+  }
+
+  .image{
+     flex:1 1 31rem;
+
+     img{
+        width: 100%;
+     }
+  }
+}
+@media screen and (max-width: 1065px) {
+  .hero{
+    padding: 10rem 5rem 5rem 5rem;
+  }
+  .banner{
+    width: 100%;
+  }
+}
+@media (max-width:450px){
+
+  html{
+     font-size: 50%;
+  }
+
+  .banner .content h3{
+     font-size: 3rem;
+  }
+
+
+}

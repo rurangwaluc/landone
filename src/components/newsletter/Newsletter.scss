@@ -1,0 +1,111 @@
+.newsletter{
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+#subscribebox{
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    background: var(--foreground);
+    text-align: center;
+    border-radius: 4px;
+    padding: 60px 20px;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .fa-envelope{
+    color: var(--background);
+    margin-bottom: 2rem;
+  }
+  
+  h3{
+    color: var(--background);
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    font-family: inherit;
+    margin-bottom: 2rem;
+  }
+  
+  #email-input{
+    width: 450px;
+    max-width: 100%;
+    font-family: inherit;
+    color: var(--foreground);
+    text-align: left;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 0px;
+    padding: 15px 0px 15px 20px;
+    font-size: 14px;
+    background: var(--background);
+  }
+  
+  #email-input:focus, #email-input:hover{
+    outline: 0px;
+  }
+  
+  #subscribe-button{
+    border: 0px;
+    width: 150px;
+    max-width: 100%;
+    font-size: 700;
+    padding: 15px;
+    font-size: 14px;
+    color: #F0F4EF;
+    font-family: inherit;
+    background: #ed2d34;
+    cursor: pointer;
+    border-radius: 0px 2px 2px 0px;
+    outline: 0;
+    transition: all 0.2s;
+  }
+  
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .newsletter{
+    height: 80vh;
+  }
+    .wrapper{
+
+        padding: 10rem 5rem 5rem 5rem;
+    }
+    #subscribebox{
+        width: 700px;
+        max-width: 80%;
+    }
+    #subscribe-button{
+      width: 98%;
+      margin: 5px;
+      border-radius: 2px;
+    }
+    #email-input{
+      width: 98%;
+      margin: 5px;
+      text-align: center;
+    }
+    #subscribebox{
+      width: 100%;
+    }
+  }
+  
