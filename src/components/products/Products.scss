@@ -136,8 +136,37 @@
   
 
 }
+@media (max-width: 420px){
+
+  .product {
+    width: 100%;
+    min-height: 70vh;
+    margin: 0 auto !important;
+    padding-top: 4rem;
+  }
+ 
+  .product-details{
+    grid-template-columns: 1fr;
+    width: 100%;
+    
+
+  }
+  .product-info {
+    padding-left: 1.4rem;
+  }
+
+
+  .product-img {
+    order: initial;
+    width: 95%;
+    margin: 0 auto !important;
+  } 
+  
+
+}
 
 @media (max-width:345px){
+  
 
   .product-img {
     margin-bottom: -4rem;
