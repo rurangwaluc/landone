@@ -13,7 +13,8 @@
 
 .product {
   width: 100%;
-  min-height: 80vh;
+  // min-height: 80vh;
+  margin: 2rem 0.5rem;
  
 }
 
@@ -63,8 +64,13 @@
   margin: 0.7rem 0 1rem;
   color: var(--background);
 }
-.product-info a {
-  width: 12rem;
+.product-info button {
+  width: 15rem;
+ a{
+  &:hover{
+    color: #ffffff;
+  }
+ }
 }
 
 @media (max-width:768px){

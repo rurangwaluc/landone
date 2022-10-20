@@ -17,7 +17,7 @@ const Products = ({ myTheme })  => {
               <h1 >A really nice shoe</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
                     perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
-              <a href="" className="--btn --btn-danger">Buy now</a>
+             <button> <a href="" className="--btn --btn-danger">Buy now</a></button>
             </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ const Products = ({ myTheme })  => {
               <h1 >A really nice shoe</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
                     perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
-              <a href="" className="--btn --btn-danger">Buy now</a>
+               <button> <a href="" className="--btn --btn-danger">Buy now</a></button>
             </div>
         </div>
       </div>

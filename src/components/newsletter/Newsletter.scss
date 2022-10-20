@@ -56,6 +56,8 @@
     padding: 15px 0px 15px 20px;
     font-size: 14px;
     background: var(--background);
+    text-transform: lowercase;
+    
   }
   
   #email-input:focus, #email-input:hover{
@@ -66,7 +68,7 @@
     border: 0px;
     width: 150px;
     max-width: 100%;
-    font-size: 700;
+    font-weight: 500;
     padding: 15px;
     font-size: 14px;
     color: #F0F4EF;

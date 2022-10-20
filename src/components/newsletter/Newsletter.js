@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import db from "./firebase";
 import firebase from "firebase/compat/app";
+
 import './Newsletter.scss';
 
 
@@ -19,6 +20,7 @@ const Newsletter = ({ myTheme }) => {
         db.collection("emails").add({
           email: input,
           time: firebase.firestore.FieldValue.serverTimestamp(),
+          
         });
         setInput("");
         setMessage("Thank you for Subscribing!!!");
@@ -56,7 +58,8 @@ const Alert = styled.p`
   font-size: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  background: rgba(0, 255, 0, 0.1);
+  background: rgba(13, 148, 13, 0.685);
+  color: #ffffff;
   backdrop-filter: blur(10px);
   z-index: 3;
 `;
