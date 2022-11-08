@@ -14,7 +14,7 @@
 .product {
   width: 100%;
   // min-height: 80vh;
-  margin: 2rem 0.5rem;
+  margin: 4rem 0.5rem;
  
 }
 
@@ -23,10 +23,11 @@
   display: grid;
   grid-template-columns:  1fr 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 auto;
-  background-color: var(--foreground);
-   color: var(--background);
+  // background-color: var(--foreground);
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+   color: var(--foreground);
    padding: 4rem;
    border-radius: 4px;
 }
@@ -42,7 +43,7 @@
   font-family: "Courier New",Courier;
 }
 .product-info h1 {
-  color: var(--background);
+  color: var(--foreground);
   font-size: 4vw;
   font-family: "Courier New",Courier;
   font-weight: 600;
@@ -62,7 +63,7 @@
   font-size: var(--p-font);
   font-weight: 400;
   margin: 0.7rem 0 1rem;
-  color: var(--background);
+  color: var(--foreground);
 }
 .product-info button {
   width: 15rem;
